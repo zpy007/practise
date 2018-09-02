@@ -1,0 +1,4 @@
+rootProject.name = 'practise'
+include 'service'
+include 'web'
+

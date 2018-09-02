@@ -1,0 +1,26 @@
+allprojects{
+    group 'com.zpy'
+    version '1.0-SNAPSHOT'
+}
+
+//负责子模块的设置
+subprojects{
+    apply plugin:'java'
+
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+    }
+
+    //负责整个项目的关键字别名设置
+    ext{
+        spring_version='5.0.6.RELEASE'
+    }
+
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.11'
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+    }
+}
+
