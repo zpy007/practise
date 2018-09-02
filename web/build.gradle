@@ -6,7 +6,6 @@ plugins {
 dependencies {
     compile group: 'org.springframework', name: 'spring-context', version: spring_version
     compile group: 'org.springframework', name: 'spring-webmvc', version: spring_version
-    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.6'
 
 }
